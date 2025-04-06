@@ -1,4 +1,5 @@
 # Gun Detection and Blurring Pipeline
+![WhatsApp Image 2025-04-06 at 17 28 45_c48d7f87](https://github.com/user-attachments/assets/bec4ca57-7ff1-4147-8ba0-ceaf5f631e3f)
 
 This project implements a gun detection system using the YOLOv8 model, integrated with a FastAPI backend to process images and blur detected guns. The solution is designed to be deployed as a browser extension or API service, with hosting capabilities on Ubicloud and an MLOps pipeline managed by Apache Airflow. This README provides an overview of the pipeline, setup instructions, and deployment details.
 
@@ -145,9 +146,6 @@ gun-detection-project/
 
 - **`Dockerfile`**:
   - Defines the Docker container configuration, specifying the Python environment, dependencies, and the command to run the FastAPI server.
-
-- **`deploy.yaml`**:
-  - A Kubernetes deployment and service configuration file for deploying the application on Ubicloud. It includes settings for replicas, container image, and port mapping.
 
 - **`requirements.txt`**:
   - Lists all Python dependencies required to run the project, including FastAPI, Uvicorn, Ultralytics, Pillow, NumPy, OpenCV, DVC, and Apache Airflow.
