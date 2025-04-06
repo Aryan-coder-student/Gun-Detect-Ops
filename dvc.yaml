@@ -1,0 +1,21 @@
+stages:
+  download:
+    cmd: python src/train.py --stage download
+    deps:
+      - src/train.py
+      - config.yaml
+    outs:
+      - data/dataset:
+          cache: true
+          persist: true
+
+  train:
+    cmd: python src/train.py --stage train
+    deps:
+      - src/train.py
+      - config.yaml
+      - data/dataset
+    outs:
+      - models:  # Track the entire directory
+          cache: true
+          persist: true

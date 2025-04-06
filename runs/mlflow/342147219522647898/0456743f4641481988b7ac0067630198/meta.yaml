@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/My File/MERNxAI/ML-DL Work/blood-image-nfsw/gun-Ops/runs/mlflow/342147219522647898/0456743f4641481988b7ac0067630198/artifacts
+end_time: 1743943518502
+entry_point_name: ''
+experiment_id: '342147219522647898'
+lifecycle_stage: active
+run_id: 0456743f4641481988b7ac0067630198
+run_name: yolov8n_gun
+run_uuid: 0456743f4641481988b7ac0067630198
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743943514477
+status: 3
+tags: []
+user_id: ASUS

@@ -1,0 +1,41 @@
+project:
+  name: "handgun-detection-mlops"
+  version: "1.0.0"
+
+data:
+  roboflow:
+    api_key: "L0WhQmPMmGZRzaVXBdlH"  
+    workspace: "crime-detection-twsi6"
+    project: "handgun-detection-lrxb3"
+    version: 2
+    format: "yolov8"
+  paths:
+    dataset: "data/dataset"
+    data_yaml: "data/dataset/data.yaml"
+
+training:
+  model:
+    base_model: "yolov8n.pt"
+    output_name: "yolov8n_gun"
+    output_path: "models"
+  hyperparameters:
+    epochs: 50
+    img_size: 640
+    batch_size: 16
+    confidence_threshold: 0.25
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true  
+
+dvc:
+  remote: "dagshub"
+  dagshub:
+    url: "https://dagshub.com/Aryan-coder-student/Gun-Ops"
+    username: "Aryan-coder-student"   
+    token: "61b1e2ba526ee0675b3d551a02faed17d050a0da"  
+
+docker:
+  image_name: "handgun-detection-api"
+  tag: "latest"
