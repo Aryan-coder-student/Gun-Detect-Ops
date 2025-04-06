@@ -1,5 +1,3 @@
-Below is an updated version of the `README.md` file that includes an explanation of the `dags/handgun_detection_pipeline.py` file, which defines an Apache Airflow DAG (Directed Acyclic Graph) for orchestrating the handgun detection MLOps pipeline. I've added a new section for DAGs, updated the folder structure, and included a description of the file under "File Descriptions."
-
 # Gun Detection and Blurring Pipeline
 
 This project implements a gun detection system using the YOLOv8 model, integrated with a FastAPI backend to process images and blur detected guns. The solution is designed to be deployed as a browser extension or API service, with hosting capabilities on Ubicloud and an MLOps pipeline managed by Apache Airflow. This README provides an overview of the pipeline, setup instructions, and deployment details.
@@ -32,7 +30,7 @@ The primary use case is to enhance privacy and safety by automatically blurring 
 ## Pipeline Workflow
 
 The pipeline consists of several stages, from image input to blurred output. Below is a Mermaid diagram representing the workflow:
-
+```
 
 graph TD
     A[User Input: Image or Screen Capture] --> B[Browser Extension]
@@ -46,7 +44,7 @@ graph TD
         C --> D
         D --> E
     end
-
+```
 
 ### Detailed Workflow
 1. **User Input**:
