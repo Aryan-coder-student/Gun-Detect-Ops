@@ -81,7 +81,7 @@ graph TD
 - **Dependencies**: Python, `requests`, `numpy`, `torch`, `uvicorn`, `dvc`, `apache-airflow`.
 
 ## Folder Structure
-
+```
 gun-detection-project/
 │
 ├── content/                    # Directory for model weights and runs
@@ -113,7 +113,7 @@ gun-detection-project/
 ├── README.md                   # Project documentation
 ├── LICENSE                     # License file
 └── .gitignore                  # Git ignore file
-
+```
 
 ## File Descriptions
 
